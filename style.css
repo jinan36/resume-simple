@@ -172,4 +172,5 @@ main section:not(:last-child) {
 }
 .detail.experience .item {
   margin-top: 10px;
+  word-break: break-all;
 }
