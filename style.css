@@ -54,7 +54,6 @@ header p {
 aside {
   width: 240px;
   position: relative;
-  padding-top: 90px;
   background: #fff;
   padding: 90px 15px 30px 30px;
 }
@@ -86,7 +85,7 @@ main::before {
   bottom: 27px;
   background: #ccc;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   aside {
     width: 100%;
   }
