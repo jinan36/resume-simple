@@ -35,12 +35,13 @@ a:hover {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 header {
   width: 100%;
   background: #3c3c3e;
   text-align: center;
-  padding: 100px 0 26px;
+  padding: 10px 0 10px;
 }
 header h1 {
   font-size: 30px;
@@ -52,7 +53,6 @@ header p {
   color: #848486;
 }
 aside {
-  width: 240px;
   position: relative;
   background: #fff;
   padding: 90px 15px 30px 30px;
@@ -71,10 +71,9 @@ aside section:not(:last-child) {
 }
 main {
   flex: 1;
-  min-height: calc(100vh - 100px);
   background: #fff;
   position: relative;
-  padding: 0 20px 30px;
+  padding: 0 20px 5px;
 }
 main::before {
   content: "";
@@ -88,24 +87,25 @@ main::before {
 @media screen and (max-width: 768px) {
   aside {
     width: 100%;
+    padding: 90px 20px 0 20px;
+  }
+  aside .avatar{
+    left: 50%;
+    transform: translateX(-50%);
   }
   header {
     width: 100%;
     background: #3c3c3e;
     text-align: center;
-    padding: 100px 0 100px;
+    padding: 20px 0 100px;
   }
   main {
     width: 100%;
   }
 }
 section {
-  margin-top: 30px;
-  padding-bottom: 23px;
-  min-height: 157px;
-}
-section .detail {
-  margin-top: 15px;
+  margin-top: 5px;
+  padding-bottom: 5px;
 }
 section .item {
   display: flex;
@@ -167,13 +167,13 @@ main section:not(:last-child) {
   margin-left: 30px;
 }
 .detail.experience h3 {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .detail.experience .item {
-  margin-top: 10px;
+  margin-top: 5px;
   word-break: break-all;
 }
 .detail.experience .item img{
   width: 100px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
